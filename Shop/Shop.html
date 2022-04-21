@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Tourism Agency</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+
+
+        <link rel="stylesheet" href="../Shop/style.css"/>
+        <link rel="stylesheet" href="../Shop/Shop.css"/>
+
+        <script src="../Shop/Src/Cart.js"></script>
+    </head>
+    <body onload="Initialise()">
+        <!-- Nav bar-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="../Home/homepage.html">Home</a>
+                </li>
+                <li>
+                    <a href="../Home/homepage.html">Query</a>
+                </li>
+                <li>
+                    <a href="../Shop/Shop.html">Products</a>
+                </li>
+                <li>
+                    <a href="../student form/studentform.html">Team</a>
+                </li>
+                <li>
+                    <a href="../Home/homepage.html">Thumbnails</a>
+                </li>
+                <li>
+                    <a href="../quiz/quiz2.html">Quiz</a>
+                </li>
+            </ul>
+        </nav>
+        <section  id="Shop">
+            <div class="container">
+                <div>
+                    <h1 style="text-align: center; margin-bottom: 50px; padding-left: 0px">Welcome to the shop</h1>
+                    <div id="Cart" class="CartContainer">
+                        <h3 style="margin-left: 7px; margin-top: 5px">Shopping Cart <a style="float: right; color: red;opacity: 0.4; cursor: pointer; font-size: 12px; margin-right: 10px;" onclick="ClearCart()">Clear</a></h3>
+                        <ul id="OrderList"></ul>
+                        <div style="margin-left: 10px; height: auto;">
+                            <p >Sub Total:<strong id="SubTotal">£0.00</strong></p>
+                            <p >Vat:<strong id="Vat">£0.00</strong></p>
+                            <p >Shipping:<strong>FREE</strong></p>
+                            <h4>Total:<strong id="Total">£0.00</strong></h4>
+                        </div>
+                        <a class="button" href="Checkout.html" style="margin-bottom: 10px; width: 50%" >Check Out</a>
+                    </div>
+
+                    <div id="btn_Cart" class="CartBtn" onclick="ToggleCart()">
+                          <span class="fa-stack fa-2x" >
+                            <i style="color:mediumpurple" class="fas fa-circle fa-stack-2x"></i>
+                            <i style="color: white;" class="fas fa-shopping-bag fa-stack-1x"></i>
+                        </span>
+                        <div id="CartCount" class="ItemCounter"><h5 style="padding: 4px">0</h5></div>
+                    </div>
+
+                    <p style="padding-bottom:3%;"><strong>Products</strong></p>
+                    <div class="ItemsContainer">
+                        <div class="Item">
+                            <img class="ItemImg" src="../Shop/Resources/Graphics/ItemOne.png" alt="Image of travel bag">
+                            <h3>Travel Bag</h3>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <p style="float: left; opacity: 0.4; font-size: 14px">(2,351)</p>
+                            </div>
+                            <br/>
+                            <p class="LightText">Very fancy bag</p>
+                            <br/>
+                            <p class="ItemPrice">£44.95</p>
+
+                            <button class="button" style="margin-top: 10px" onclick="AddToCart('Travel Bag', 44.95, 1, '../Shop/Resources/Graphics/ItemOne.png')">Add To Cart</button>
+                        </div>
+                        <div class="Item">
+                            <span class="ItemSale">
+                                <img class="ItemImg" src="../Shop/Resources/Graphics/ItemTwo.png" alt="Image of travel bag">
+                            </span>
+
+                            <h3>Shoe</h3>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star unchecked"></span>
+                                <p style="float: left; opacity: 0.4; font-size: 14px">(45)</p>
+                            </div>
+                            <br/>
+                            <p class="LightText">Just one shoe</p><br/>
+                            <p class="ItemPrice"><del style="color: red; opacity: 0.5;">£59.95</del> £29.97</p>
+                            <button class="button" onclick="AddToCart('Item 2', 29.97, 1, '../Shop/Resources/Graphics/ItemTwo.png' )" style="margin-top: 10px" >Add To Cart</button>
+                        </div>
+                        <div class="Item ItemImg">
+                            <img class="ItemImg" src="../Shop/Resources/Graphics/ItemThree.png" alt="Image of travel bag">
+                            <h3>Travel Toothpaste</h3>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star unchecked"></span>
+                                <p style="float: left; opacity: 0.4; font-size: 14px">(148)</p>
+                            </div>
+                            <br/>
+                            <p class="LightText">1/10 dentists don't recommend</p>
+                            <p class="ItemPrice">34.95</p>
+                            <button class="button" onclick="AddToCart('Toothpaste', 34.95 , 1, '../Shop/Resources/Graphics/ItemThree.png' )" style="margin-top: 10px">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 200px"/>
+        </section>
+    </body>
+</html>

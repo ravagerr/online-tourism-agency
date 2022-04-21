@@ -1,0 +1,45 @@
+.CheckoutForm{
+
+}
+
+p{
+    font-weight: bold;
+
+}
+
+
+input{
+    padding:15px;
+    border-radius:10px;
+    border:0;
+    box-shadow:4px 2px 30px rgba(0, 0, 0, 0.11);
+    height:10px;
+}
+
+legend{
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    font-weight: bolder;
+    text-align: center;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#Left {
+    width: 50%;
+}
+#Right {
+    padding-left: 20px;
+    width: 50%;
+}
+
+
+
+#InvoiceContent{
+    background: ghostwhite;
+    border-radius: 15px;
+}

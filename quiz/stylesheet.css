@@ -1,0 +1,60 @@
+
+
+nav {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	background: transparent;
+    text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	padding: 24px 10px;
+}
+
+nav li a {
+	text-transform: uppercase;
+    color:black;
+}
+
+nav li a:hover{
+    padding: 10px 10px;
+    color: white;
+    border: 2px solid white;
+}
+
+        #frame001 {
+            border-radius: 5px;
+            background-color: #808080 ;
+            border: 2px solid black;
+            
+			margin-left: auto;
+            margin-right:auto;
+			margin-top: 100px;
+            margin-bottom:auto;
+        }
+
+        .buttons001 {
+            background-color: dodgerblue;
+            color: white;
+            width: 70px;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        .buttons002 {
+            background-color: blue;
+            color: white;
+            width: 70px;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        #font001 {
+            text-align: center;
+            font-size: large;
+            color: black;
+        }
+		

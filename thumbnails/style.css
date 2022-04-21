@@ -1,0 +1,280 @@
+/* Sticky nav bar reference: https://stanhub.com/scroll-to-top-then-fixed-navigation-effect-with-jquery-and-css-free-download/ */
+
+* {margin: 0; padding: 0;}
+
+a {text-decoration: none;}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.fixed {
+	position: fixed;
+	top: 0;
+	height: 70px;
+	z-index: 1;
+    background: white;
+
+}
+
+body {
+	color: #fff;
+	font-family: 'open-sans-bold', AvenirNext-Medium, sans-serif;
+	font-size: 18px;
+    display:flex;
+    flex-direction:column;
+    box-sizing: border-box;
+}
+
+/* Navigation Settings */
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background: transparent;
+    text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	padding: 24px 10px;
+}
+
+nav li a {
+	text-transform: uppercase;
+    color:rgb(185, 183, 183);
+}
+
+nav li a:hover{
+    padding: 10px 10px;
+    color: white;
+    border: 2px solid white;
+}
+
+/* First section with image */
+section {
+	height: 100vh;
+    background-color: rgb(255, 254, 254);
+}
+
+@media only screen and (max-width: 566px) {
+
+	nav li {
+		padding: 24px 4px;
+	}
+
+	nav li a {
+		font-size: 12px;
+	}
+    .description-1 {
+      padding-top:20vh;
+    }
+}
+
+.s-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("ohio.jpg");
+    background-size: cover;
+  }
+  .s-10 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("london.jpg");
+    background-size: cover;
+  }
+  .s-11 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("tenerife.jpg");
+    background-size: cover;
+  }
+.s-12 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("tokyo.jpg");
+    background-size: cover;
+  }
+  
+  .description-1 {
+    padding-top:40vh;
+    text-align:center;
+    transition: 1s;
+    min-width: 10%;
+    position:relative;
+  }
+  
+  .who-are-we a {
+    border: 2px solid white;
+    display:inline-block;
+    padding: 10px 10px;
+    color: white;
+  }
+  
+  .who-are-we {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  
+  .sub-title {
+    font-size: 25px;
+  }
+  
+  .title {
+    font-size: 50px;
+  }
+  
+  .who-are-we a:hover {
+    color: rgb(223, 219, 219);
+    border: 2px solid rgb(223, 219, 219);
+  }
+
+  .s2-container
+  {
+      display: flex;
+      transition: 1s;
+      padding-top: 15%;
+      padding-left: 15%;
+      padding-right: 15%;
+      color:black;
+  }
+  .s2-description
+  {
+      display: flex;
+      flex-direction: column;
+      float: left;
+      transition: 1s;
+  }
+  .s2-description
+  {
+      width: 100%;
+      transition: 1s;
+  }
+  .s2-img
+  {
+      padding-right: 20%;
+	  
+  }
+  .s2-img img
+  {
+      width: 900px;
+      border: 2px solid black;
+      max-width:150%;
+      height: auto;
+  }
+	   
+  hr {
+      width:75%;
+      margin-left:auto;
+      margin-right:auto;
+      margin-top:10%;
+      height: 7px;
+      border:none;
+      background-color: #333;
+  }
+  
+  div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+ div.gallery:hover {
+  border: 1px solid #777;
+}
+
+ div.gallery img {
+  width: 100%;
+  height: auto;
+  border: 5px solid #555;
+}
+
+ div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+ div.contents {
+	border: 2px solid black;
+    display:inline-block;
+    padding: 10px 10px;
+    color: black;
+	position: relative;
+	left: 900px;
+	bottom: 400px;
+	width: 70px;
+	background-color: #e7e7e7
+ }
+ div.ohio {
+	border: 2px solid black;
+    display:inline-block;
+    padding: 10px 10px;
+    color: black;
+	position: relative;
+	left: 270px;
+	bottom: 770px;
+	width: 70px;
+	background-color: #e7e7e7
+ }
+ div.london {
+	border: 2px solid black;
+    display:inline-block;
+    padding: 10px 10px;
+    color: black;
+	position: relative;
+	left: 270px;
+	bottom: 620px;
+	width: 70px;
+	background-color: #e7e7e7
+ }
+ div.tenerife {
+	border: 2px solid black;
+    display:inline-block;
+    padding: 10px 10px;
+    color: black;
+	position: relative;
+	left: 270px;
+	bottom: 480px;
+	width: 70px;
+	background-color: #e7e7e7
+ }
+ div.tokyo {
+	border: 2px solid black;
+    display:inline-block;
+    padding: 10px 10px;
+    color: black;
+	position: relative;
+	left: 270px;
+	bottom: 320px;
+	width: 70px;
+	background-color: #e7e7e7
+ }
+
+.contents a:hover {
+    color: rgb(223, 219, 219);
+    border: 2px solid rgb(223, 219, 219);
+}
+		
+.ohio a:hover {
+    color: rgb(223, 219, 219);
+    border: 2px solid rgb(223, 219, 219);
+}
+.london a:hover {
+    color: rgb(223, 219, 219);
+    border: 2px solid rgb(223, 219, 219);
+}
+.tenerife a:hover {
+    color: rgb(223, 219, 219);
+    border: 2px solid rgb(223, 219, 219);
+}
+
+.tokyo a:hover {
+    color: rgb(223, 219, 219);
+    border: 2px solid rgb(223, 219, 219);
+}
+
+	 
+	 

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Tourism Agency - Checkout</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="../Shop/style.css"/>
+    <script src="../Shop/Src/Checkout.js"></script>
+    <link rel="stylesheet" href="../Shop/Shop.css"/>
+    <link rel="stylesheet" href="../Shop/Checkout.css"/>
+</head>
+<body onload="Initialise()" >
+    <!-- Nav bar -->
+    <nav>
+        <ul>
+            <li>
+                <a href="../Home/homepage.html">Home</a>
+            </li>
+            <li>
+                <a href="../Home/homepage.html">Query</a>
+            </li>
+            <li>
+                <a href="../Shop/Shop.html">Products</a>
+            </li>
+            <li>
+                <a href="../student form/studentform.html">Team</a>
+            </li>
+            <li>
+                <a href="../Home/homepage.html">Thumbnails</a>
+            </li>
+            <li>
+                <a href="../quiz/quiz2.html">Quiz</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div style="margin-left: auto; margin-right: auto"  >
+        <h1 style="text-align: center; margin-bottom: 50px">Checkout</h1>
+        <div>
+            <div  id="DetailsForm" >
+                <p style="padding-bottom:3%;"><strong>Details</strong></p>
+
+            <form class="CheckoutForm" >
+                <div id="container">
+                    <fieldset style="border: transparent; " id="Left">
+                        <legend>Personal Info</legend>
+                        <label for="iName">Full Name</label><br/>
+                        <input type="text" name="FullName" id="iName"/><br/>
+
+                        <label for="iEmail">Email</label><br/>
+                        <input name="Email" id="iEmail" /><br/>
+
+                        <label for="iPhone">Phone</label><br/>
+                        <input type="tel" name="Phone" id="iPhone" /><br/>
+                    </fieldset>
+                    <fieldset style="border: transparent; " id="Right">
+                        <legend>Shipping Address</legend>
+                        <label for="iLine1">Line 1</label><br/>
+                        <input type="text" name="Line1" id="iLine1" /><br/>
+
+                        <label for="iLine2">Line 2</label><br/>
+                        <input type="text" name="Line2" id="iLine2"/><br/>
+
+                        <label for="iCity">City</label><br/>
+                        <input type="text" name="City" id="iCity" /><br/>
+
+                        <label for="iPostcode">Postcode</label><br/>
+                        <input type="text" name="Postcode" id="iPostcode" /><br/>
+
+                    </fieldset>
+                </div>
+
+                <br/>
+                <label style="margin-left:20% " for="iTOS">Terms and Conditions</label>
+                <input style="margin: 0 auto;" type="checkbox" name="TandC" id="iTOS" />
+                <br/>
+                <!--<input type="submit" onclick="SubmitForm()"/>-->
+            </form>
+            <button onclick="SubmitForm()" class="button">Place Order</button>
+            </div>
+            <div id="Invoice" hidden>
+                <h1 id="dOrderNum">Order Placed #</h1>
+                <div id="InvoiceContent" >
+                    <div style="padding: 20px">
+                        <h1 style="text-align: center; margin-top: 90px">Invoice</h1>
+                        <h3 style="margin-top: 30px">Details</h3>
+                        <p>Name: <strong id="dName">xxx</strong></p>
+                        <p>Email: <strong id="dEmail">xxx</strong></p>
+                        <p>Phone: <strong id="dPhone">xxx</strong></p>
+                        <h3 style="margin-top: 30px">Shipping Address</h3>
+                        <p>Line1: <strong id="dLine1">xxx</strong></p>
+                        <p>Line2: <strong id="dLine2">xxx</strong></p>
+                        <p>City: <strong id="dCity">xxx</strong></p>
+                        <p>Postcode: <strong id="dPostcode">xxx</strong></p>
+                        <br/>
+                        <ul id="OrderList"></ul>
+                        <p>SubTotal<strong id="dSubTotal">xxx</strong></p>
+                        <p>Vat<strong id="dVat">xxx</strong></p>
+                        <h3>Total<strong id="dTotal">xxx</strong></h3>
+                    </div>
+                </div>
+                <button class="button" onclick="PrintInvoice()">Print Invoice</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

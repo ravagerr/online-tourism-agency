@@ -1,0 +1,379 @@
+* {margin: 0; padding: 0;}
+
+a {text-decoration: none;}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* This class is added on scroll */
+.fixed {
+	position: fixed;
+	top: 0;
+	height: 70px;
+	z-index: 1;
+    background: white;
+}
+
+body {
+	color: #fff;
+	font-family: 'open-sans-bold', AvenirNext-Medium, sans-serif;
+	font-size: 18px;
+    display:flex;
+    flex-direction:column;
+    box-sizing: border-box;
+}
+
+/* Navigation Settings */
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background: transparent;
+    text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	padding: 24px 10px;
+}
+
+nav li a {
+	text-transform: uppercase;
+  color:rgb(57, 103, 211);
+  font-weight: bold;
+}
+
+nav li a:hover{
+    padding: 10px 10px;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+}
+
+@media only screen and (max-width: 581px) {
+
+	nav li {
+		padding: 24px 4px;
+	}
+
+	nav li a {
+		font-size: 15px;
+	}
+    .description-1 {
+      padding-top:20vh;
+    }
+    .s2-container {
+      display:grid;
+    }
+}
+
+@media only screen and (max-width: 439px) {
+  nav li a {
+		font-size: 11px;
+	}
+}
+
+/* First section with image */
+
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("joshua-earle--87JyMb9ZfU-unsplash.jpg");
+    background-size: cover;
+  }
+  
+  .description-1 {
+    padding-top:40vh;
+    text-align:center;
+    transition: 1s;
+    min-width: 10%;
+    position:relative;
+    color:rgb(57, 103, 211);
+    font-weight: bold;
+  }
+  
+  .who-are-we a {
+    border: 2px solid rgb(57, 103, 211);
+    display:inline-block;
+    padding: 10px 10px;
+    color:rgb(57, 103, 211)
+  }
+  
+  .who-are-we {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  
+  .sub-title {
+    font-size: 25px;
+  }
+  
+  .title {
+    font-size: 50px;
+  }
+  
+  .who-are-we a:hover {
+    color: white;
+    background-color:black;
+    border: 2px solid rgb(57, 103, 211); 
+    transition:1s;
+  }
+
+  @media only screen and (min-width: 1029px) {
+    .s2-container {
+      display: flex;
+    }
+    .s2-img {
+      padding-right: 20%;
+  }
+  }
+  .s2-container {
+      transition: 1s;
+      padding-top: 15%;
+      padding-left: 15%;
+      padding-right: 15%;
+      color:black;
+  }
+  .s2-description {
+      display: flex;
+      flex-direction: column;
+  }
+  .s2-description {
+      width: 100%;
+  }
+  @media only screen and (max-width: 1029px) {
+  .s2-img
+  {
+      padding-right: 34%;
+      margin-top:5%;
+  }
+}
+
+  .s2-img img {
+      width: 900px;
+      border: 2px solid rgb(57, 103, 211);
+      max-width:150%;
+      height: auto;
+  }
+
+  .section-hr {
+      width:75%;
+      margin-left:auto;
+      margin-right:auto;
+      margin-top:10%;
+      height: 7px;
+      border:none;
+      background-color: rgb(57, 103, 211);
+  }
+
+
+.section-3 {
+  color: black;
+  margin-top:20%
+}
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+  }
+  
+  /* Responsive layout for thumbnails */
+  @media screen and (max-width: 50em) {
+    .column {
+      width: 100%;
+    }
+  }
+
+.column img {
+  border-radius: 1%;
+}
+
+@media only screen and (min-width:1060px) {
+  .column {
+      display:inline-block;
+       width: 22%;
+       padding:0;
+       margin:10px;
+       border: 2px solid rgb(57, 103, 211);
+       box-shadow: 2px 2px 2px 2px;
+       text-align: center;
+     }
+     .button {
+      padding: 15px 32px;
+     }
+ }
+     
+     
+    @media only screen and (max-width:1211px)  { 
+      .column {
+        display:inline-block;
+        width: 40%;
+        padding:0;
+        margin:10px;
+        border: solid 2px rgb(57, 103, 211);
+        box-shadow: 2px 2px 2px 2px;
+        text-align: center;
+     }
+     .button {
+       padding: 10px 5px;
+     }
+   
+ }
+
+ .column h2 {
+   text-align: center;
+   margin-bottom: 0.5em;
+ }
+
+ .button {
+  border: solid 2px rgb(57, 103, 211);
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  white-space:normal;
+}
+
+.button:hover {
+  color:white;
+  background:rgb(0, 0, 0);
+  transition: 1s;
+}
+
+.s3-container {
+  margin-top: -15%;
+  padding:11%;
+  text-align: center;
+  margin-bottom:-15%;
+  align-items: center;
+}
+
+
+form, .form-only
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-left
+{
+    color:black;
+}
+
+#form-Output
+{
+    display: none;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 2px 2px 2px 2px;
+    border: solid 2px rgb(57, 103, 211);
+}
+textarea
+{
+    width:204px;
+    resize: none;
+    border-radius:15px;
+    border:0;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+    padding-left:5px;
+}
+input
+{
+    width:200px;
+}
+
+
+.subjectField
+{
+    width:205px;
+}
+.view-query-button
+{
+    margin-left: 50%;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(57, 103, 211);
+    cursor: pointer;
+}
+
+.view-query-button:hover {
+  background-color: #000;
+  color:#fff;
+  transition: 1s;
+}
+
+.edit-send-buttons
+{
+    margin-top:35%;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid rgb(57, 103, 211);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.edit-send-buttons:hover
+{
+  background-color: #000;
+  color:#fff;
+  transition: 1s;
+    
+}
+.query-h1
+{
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+    color:black;
+}
+
+.query-container
+{
+  height: auto;
+    display: flex;
+    flex-direction:column;
+    margin: auto;
+    transition: 1s;
+}
+
+.buttons
+{
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+}
+.buttons2
+{
+    margin:10px;
+    float: left;
+}
+
+.form-input 
+{
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 2px 2px 2px 2px;
+    border: solid 2px rgb(57, 103, 211);
+}
+
+
+
+footer {
+  text-align: left;
+  padding: 3px;
+  background-color: rgb(57, 103, 211);
+}
+
+
+
+
